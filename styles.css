@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Background full screen and centered */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('love-letter-image.jpg'); /* Replace with your love letter image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Send background behind all content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+/* Main content inside background */
+.content {
+    max-width: 80%;
+    padding: 20px;
+}
+
+/* Heading and paragraph styles */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Music play button */
+.play-btn {
+    position: absolute;
+    top: 20px; /* Button at top-right */
+    right: 20px;
+    background-color: #ff5e5e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1; /* Ensure button is above background */
+}
+
+.play-btn:hover {
+    background-color: #ff3b3b;
+}
